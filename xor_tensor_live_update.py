@@ -171,6 +171,7 @@ def plot_decision_boundary(pred_func):
     Z = Z.reshape(xx.shape)
     # Plot the contour and training examples
     #plt.figure(2)
+    
     plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral)
     plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Spectral)
     plt.show(block=False)
